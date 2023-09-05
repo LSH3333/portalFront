@@ -1,0 +1,27 @@
+/* FOOTER */
+footer {
+    color: gray;
+    /* background-color:darkslategray; */
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;   
+}
+
+footer h3 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+footer ul {
+    
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: gray;
+}
+

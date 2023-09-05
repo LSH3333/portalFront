@@ -5,9 +5,8 @@
 }
 
 /* HEADER */
-
 header {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     /* linear-gradient: 이미지에 명암을 줌 (default는 to bottom) */
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(headerImg.jpeg);
@@ -89,7 +88,6 @@ nav {
 
 
 
-
 /* MAIN */
 main {
     /* background-color: gray; */
@@ -117,4 +115,3 @@ main {
 #mainBlock1 p {
     max-width: 40%;
 }
-
