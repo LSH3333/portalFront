@@ -133,6 +133,7 @@ main {
     justify-content: space-around;
     padding: 6% 6%;
     min-height: 45vh;
+    position: relative;
 
     display: flex;
     align-items: center;
