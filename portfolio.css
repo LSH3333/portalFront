@@ -103,7 +103,6 @@ main {
     /* width: 100%; */
     /* background-color: antiquewhite; */
     /* background-color: rgb(239, 239, 245); */
-    display: flex;
     justify-content: space-around;
     padding: 6% 6%;
     min-height: 45vh;
@@ -149,4 +148,30 @@ main {
 
 #mainBlock2 p {
     max-width: 30%;
+}
+
+/* mainBlock3 */
+#mainBlock3 {
+    /* background-color: aquamarine; */
+    padding: 6% 6%;
+    min-height: 45vh;
+}
+
+#mainBlock3 .imgBlock {
+    display: inline-block;
+    text-align: center;
+    /* background-color: #f44336; */
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+#mainBlock3 .imgBlock img {
+    max-width: 30%;
+    padding: 0 2.5px;
+}
+
+#mainBlock3 p {
+    /* background-color:yellow; */
+    max-width: 100%;
+    margin-top: 1%;
 }
