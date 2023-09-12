@@ -9,10 +9,17 @@
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <link rel="stylesheet" type="text/css" href="footer.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet"> -->
+    <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/c39d59a5ec.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +35,7 @@
                     <li><a href="">Portfolio</a></li>
                     <li><a href="aboutme.html">About me</a></li>
                     <li><a href="https://tose33.tistory.com/" target="_blank">Blog</a></li>
-                    <li><a href="https://github.com/LSH3333" target="_blank">Git</a></li>                    
+                    <li><a href="https://github.com/LSH3333" target="_blank">Git</a></li>
                 </ul>
             </div>
             <!-- Menu icon -->
@@ -41,36 +48,57 @@
 
     <!-- MAIN -->
     <main>
+        <!-- MainBlock1 -->
         <div id="mainBlock1">
             <div class="imgBlock">
                 <img src="instaweb.png" alt="">
-            </div>      
-            <p>            
-                회원가입하면 누구나 글, 댓글을 작성할수 있는 웹.
-                <br><br>
-                <!-- <a href="https://lsh-instaweb.herokuapp.com/" target="_blank">https://lsh-instaweb.herokuapp.com/</a>
-                <a href="https://github.com/LSH3333/Instaweb" target="_blank">https://github.com/LSH3333/Instaweb</a><br> -->
-                <a href="https://lsh-instaweb.herokuapp.com/" target="_blank">visit web →</a><br>
-                <a href="https://github.com/LSH3333/Instaweb" target="_blank">visit git →</a>                
-            </p>                  
+            </div>
+            <div id="mainBlock1Content">
+                <p>
+                    로그인 후 글, 댓글을 작성할수 있는 웹.
+                    <br><br>
+                    <a href="https://lsh-instaweb.herokuapp.com/" target="_blank">visit web →</a><br>
+                    <a href="https://github.com/LSH3333/Instaweb" target="_blank">visit git →</a>
+                </p>
+                <div class="techStack">
+                    <img src="/images/spring.svg" alt="">
+                    <img src="/images/hibernate.svg" alt="">
+                    <img src="/images/html.svg" alt="">
+                    <img src="/images/css.svg" alt="">
+                    <img src="/images/thymeleaf.svg" alt="">
+                    <img src="/images/js.svg" alt="">
+                    <img src="/images/heroku.svg" alt="">
+                    <img src="/images/postgres.svg" alt="">
+                </div>
+            </div>
         </div>
-        <div id="mainBlock2">             
+        <!-- MainBlock2 -->
+        <div id="mainBlock2">
+            <!-- 베지어 곡선 따라 이동하는 오브젝트들 -->
             <span style="position: absolute;" id="obj"><img id="imgObj" src="Enemy1_1.png" alt=""></span>
             <span style="position: absolute;" id="obj2"><img id="imgObj2" src="Enemy2_1.png" alt=""></span>
             <span style="position: absolute;" id="obj3"><img id="imgObj3" src="Enemy3_1.png" alt=""></span>
             <span style="position: absolute;" id="obj4"><img id="imgObj4" src="Enemy4_1.png" alt=""></span>
+            <!-- 조절점들 -->
             <span style="position: absolute;" id="p1"></span>
             <span style="position: absolute;" id="p2"></span>
             <span style="position: absolute;" id="p3"></span>
-            <span style="position: absolute;" id="p4"></span>    
-            <p>                      
-                <a href="https://github.com/LSH3333/Galaga" target="_blank">https://github.com/LSH3333/Instaweb</a>
-                <br><br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut voluptates, quia illo, quos error repellat nobis earum veniam eos eum magni! Quas, eum consequuntur iusto aspernatur animi, doloribus quo sunt quidem nihil sequi dignissimos voluptas quibusdam ipsam nemo placeat distinctio alias! Temporibus maiores officia porro nesciunt repellat esse eveniet dolore.
-            </p>                  
+            <span style="position: absolute;" id="p4"></span>
+            <div id="mainBlock2Content">
+                <p>
+                    Unity 로 구현한 갤러그.
+                    <br><br>
+                    <a href="https://lsh3333.itch.io/galaga" target="_blank">play game →</a><br>
+                    <a href="https://github.com/LSH3333/Galaga" target="_blank">visit git →</a>
+                </p>
+                <div class="techStack">
+                    <img src="/images/csharp.svg" alt="">
+                    <img src="/images/unity.svg" alt="">
+                </div>
+            </div>
             <div class="imgBlock">
                 <img src="galaga1.png" alt="">
-            </div>  
+            </div>
         </div>
         <div id="mainBlock3">
             <div class="imgBlock">
@@ -80,13 +108,14 @@
                 <img src="flappy.png" alt="">
                 <img src="night1.png" alt="">
                 <img src="night2.png" alt="">
-            </div>      
+            </div>
             <p>
-                <a href="https://github.com/LSH3333/Unity_ManyGames" target="_blank">https://github.com/LSH3333/Unity_ManyGames</a>
+                <a href="https://github.com/LSH3333/Unity_ManyGames"
+                    target="_blank">https://github.com/LSH3333/Unity_ManyGames</a>
                 <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, sapiente.
                 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate?
-                <br>Lorem ipsum dolor sit amet.                
-            </p>                  
+                <br>Lorem ipsum dolor sit amet.
+            </p>
         </div>
     </main>
 
@@ -113,4 +142,3 @@
 </body>
 
 </html>
-

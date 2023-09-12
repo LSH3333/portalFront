@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-size: 20px; */
+
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* HEADER */
@@ -121,16 +124,21 @@ main {
     max-width: 100%;
 }
 
-#mainBlock1 p {
-    max-width: 30%;    
+#mainBlock1 #mainBlock1Content {
+    max-width: 30%;
 }
 
-#mainBlock1 p a {
+#mainBlock1 #mainBlock1Content a {
     font-size: 18px;
     font-style: italic;
     text-decoration-line: underline;
-    color: black;    
+    color: black;
 }
+
+#mainBlock1 #mainBlock1Content .techStack {
+    margin-top: 20%;
+}
+
 
 
 /* mainBlock2 */
@@ -154,9 +162,21 @@ main {
     max-width: 70%;
 }
 
-#mainBlock2 p {
+#mainBlock2 #mainBlock2Content {
     max-width: 30%;
 }
+
+#mainBlock2 #mainBlock2Content a {
+    font-size: 18px;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: black;
+}
+
+#mainBlock2 #mainBlock2Content .techStack {
+    margin-top: 20%;
+}
+
 
 /* mainBlock3 */
 #mainBlock3 {
