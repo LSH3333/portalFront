@@ -201,8 +201,26 @@ main {
     padding: 0 2.5px;
 }
 
+#mainBlock3 #mainBlock3Content {
+    /* max-width: 30%; */
+    margin-top: 5%;
+}
+
+#mainBlock3 #mainBlock3Content a {
+    font-size: 18px;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: black;
+}
+
+#mainBlock3 #mainBlock3Content .techStack {
+    margin-top: 5%;
+}
+
+/* 
 #mainBlock3 p {
-    /* background-color:yellow; */
+    background-color:yellow;
     max-width: 100%;
     margin-top: 1%;
-}
+} */
+
