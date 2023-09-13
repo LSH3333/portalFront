@@ -5,7 +5,7 @@ let parent = document.getElementById("mainBlock2");
 let obj = document.getElementById("obj");
 let imgObj = document.getElementById("imgObj");
 // 최초 투명하도록 설정하고 무빙 시작시 1로 변경 
-imgObj.style.opacity = 0; 
+imgObj.style.opacity = 0;
 
 let obj2 = document.getElementById("obj2");
 let imgObj2 = document.getElementById("imgObj2");
@@ -47,23 +47,23 @@ function StartMoving() {
     imgObj.style.opacity = 1;
     moveElement(obj, imgObj, t);
 
-    setTimeout(function() {
+    setTimeout(function () {
         let t2 = 0;
         imgObj2.style.opacity = 1;
         moveElement(obj2, imgObj2, t2);
-    }, 1 * timeout); 
+    }, 1 * timeout);
 
-    setTimeout(function() {
+    setTimeout(function () {
         let t3 = 0;
         imgObj3.style.opacity = 1;
         moveElement(obj3, imgObj3, t3);
-    }, 2 * timeout); 
+    }, 2 * timeout);
 
-    setTimeout(function() {
+    setTimeout(function () {
         let t4 = 0;
         imgObj4.style.opacity = 1;
         moveElement(obj4, imgObj4, t4);
-    }, 3 * timeout); 
+    }, 3 * timeout);
 }
 
 
@@ -88,7 +88,7 @@ function moveElement(obj, imgObj, t) {
     obj.style.bottom = newPoints[1];
     t += t_incrase;
 
-    requestAnimationFrame(function() {
+    requestAnimationFrame(function () {
         moveElement(obj, imgObj, t); // Move element recursively
     });
 }
@@ -130,7 +130,36 @@ function Rotate(obj, imgObj, nextX, nextY) {
     // angle in degrees
     var angleDeg = Math.atan2(p2y - p1y, p2x - p1x) * 180 / Math.PI;
     angleDeg = 90 - angleDeg;
-    
+
     // Apply the rotation to the arrow  
     imgObj.style.transform = 'rotate(' + angleDeg + 'deg)';
+}
+
+
+
+function StartAnimation() {
+    imgUrls1 = ["./images/Enemy1_1.png", "./images/Enemy1_2.png"]
+    let idx1 = 0;
+    animation(imgObj,idx1,imgUrls1);
+
+    imgUrls2 = ["./images/Enemy2_1.png", "./images/Enemy2_2.png"]
+    let idx2 = 0;
+    animation(imgObj2,idx2,imgUrls2);
+
+    imgUrls3 = ["./images/Enemy3_1.png", "./images/Enemy3_2.png"]
+    let idx3 = 0;
+    animation(imgObj3,idx3,imgUrls3);
+
+    imgUrls4 = ["./images/Enemy4_1.png", "./images/Enemy4_2.png"]
+    let idx4 = 0;
+    animation(imgObj4,idx4,imgUrls4);
+}
+StartAnimation();
+
+function animation(obj, i, imgUrls) {
+    obj.src = imgUrls[i];
+    i = (i + 1) % imgUrls.length;
+    setTimeout(function() {
+        animation(obj, i, imgUrls); // Pass obj as an argument to the next call
+    }, 500);
 }
