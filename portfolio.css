@@ -13,7 +13,7 @@ header {
     min-height: 50vh;
     width: 100%;
     /* linear-gradient: 이미지에 명암을 줌 (default는 to bottom) */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(interface-3614766_1280.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/interface-3614766_1280.png);
     /* background-color: gray; */
     background-position: center;
     background-size: cover;
