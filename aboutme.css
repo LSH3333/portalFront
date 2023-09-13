@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* HEADER */
@@ -88,22 +90,22 @@ nav {
 }
 
 
-
-
 /* MAIN */
 main {
     /* background-color: gray; */
     width: 80%;
     margin: auto;
-    text-align: center;
-    padding-top: 100px;
+    /* text-align: center; */    
+    line-height: 2;
 }
 
+/* mainBlock1 */
 #mainBlock1 {
-    /* background-color: antiquewhite; */
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-around;
     padding: 2% 6%;
+    margin: 5% 0;
 }
 
 #mainBlock1 .imgBlock {
@@ -114,6 +116,21 @@ main {
     max-width: 100%;
 }
 
-#mainBlock1 p {
-    max-width: 40%;
+#mainBlock1Content {
+    /* background-color: aliceblue; */
+}
+
+#mainBlock1Content #title {
+    font-size: 30px;
+    margin: 5% 0;
+    color: #3db39e;
+}
+
+#mainBlock1Content p {
+
+}
+
+#mainBlock1Content a {
+    color: black;
+    text-decoration: underline;
 }
