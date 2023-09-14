@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css" th:href="@{/css/index.css}" />
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css" th:href="@{/css/footer.css}" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,12 @@
     <!-- HEADER -->
     <header>
         <nav>
-            <a id="logo" href="index.html">LSH</a>
+            <a id="logo" href="/templates/index.html" th:href="@{/}">LSH</a>
             <div id="navLinks">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="/templates/index.html" th:href="@{/}">Home</a></li>
+                    <li><a href="/templates/portfolio.html" th:href="@{/portfolio}">Portfolio</a></li>
+                    <li><a href="/templates/aboutme.html" th:href="@{/aboutme}">About me</a></li>
                     <li><a href="https://tose33.tistory.com/" target="_blank">Blog</a></li>
                     <li><a href="https://github.com/LSH3333" target="_blank">Git</a></li>
                     <li><a href="https://www.acmicpc.net/user/chadol51" target="_blank">PS</a></li>
@@ -42,28 +42,28 @@
     <main>
         <div id="mainBlock1">
             <div class="imgBlock">
-                <img src="./images/headerImg.jpeg" alt="">
+                <img src="/static/images/headerImg.jpeg" th:src="@{/images/headerImg.jpeg}" alt="">
             </div>
             <div id="mainBlock1Content">
                 <p>Welcome!</p>
                 이 공간은 저 자신을 소개하기 위해 만든 웹사이트입니다.<br>
                 둘러보시면서 저에 대해 알아보세요!<br>
-                <div id="readmoreBtn"><a href="./aboutme.html">About me!</a></div>
+                <div id="readmoreBtn"><a href="/templates/aboutme.html" th:href="@{/aboutme}">About me!</a></div>
             </div>
         </div>
         <div id="mainBlock2">
             <div id="mainBlock2Content">
                 <p>What I did</p>
                 제가 만든 웹사이트와 게임들, 한 번 구경해보실래요?<br>
-                <div id="readmoreBtn"><a href="./portfolio.html">Portfolio</a></div>
+                <div id="readmoreBtn"><a href="/templates/portfolio.html" th:href="@{/portfolio}">Portfolio</a></div>
             </div>
             <div class="imgBlock">
-                <img src="./images/headerImg.jpeg" alt="">
+                <img src="/static/images/headerImg.jpeg" th:src="@{/images/headerImg.jpeg}" alt="">
             </div>
         </div>
         <div id="mainBlock1">
             <div class="imgBlock">
-                <img src="./images/headerImg.jpeg" alt="">
+                <img src="/static/images/headerImg.jpeg" th:src="@{/images/headerImg.jpeg}" alt="">
             </div>
             <div id="mainBlock1Content">
                 <p>Blog</p>

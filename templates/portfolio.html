@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />   
+    <link rel="stylesheet" type="text/css" href="/static/css/portfolio.css" th:href="@{/css/portfolio.css}" />
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css" th:href="@{/css/footer.css}" />
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/c39d59a5ec.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -21,19 +21,20 @@
     <!-- HEADER -->
     <header>
         <nav>
-            <a id="logo" href="index.html">LSH</a>
+            <a id="logo" href="/templates/index.html" th:href="@{/}">LSH</a>
             <div id="navLinks">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="/templates/index.html" th:href="@{/}">Home</a></li>
+                    <li><a href="/templates/portfolio.html" th:href="@{/portfolio}">Portfolio</a></li>
+                    <li><a href="/templates/aboutme.html" th:href="@{/aboutme}">About me</a></li>
                     <li><a href="https://tose33.tistory.com/" target="_blank">Blog</a></li>
-                    <li><a href="https://github.com/LSH3333" target="_blank">Git</a></li><li><a href="https://www.acmicpc.net/user/chadol51" target="_blank">PS</a></li>                    
+                    <li><a href="https://github.com/LSH3333" target="_blank">Git</a></li>
+                    <li><a href="https://www.acmicpc.net/user/chadol51" target="_blank">PS</a></li>
                 </ul>
             </div>
         </nav>
         <div id="header-text-box">
-            <h1>PORTFOLIO</h1>
+            <h1>Portfolio</h1>
         </div>
     </header>
 
@@ -42,7 +43,7 @@
         <!-- MainBlock1 -->
         <div id="mainBlock1">
             <div class="imgBlock">
-                <img src="./images/instaweb.png" alt="">
+                <img src="/static/images/instaweb.png" th:src="@{/images/instaweb.png}" alt="">
             </div>
             <div id="mainBlock1Content">
                 <p>
@@ -55,24 +56,28 @@
                         visit git →</a>
                 </p>
                 <div class="techStack">
-                    <img src="./images/spring.svg" alt="">
-                    <img src="./images/hibernate.svg" alt="">
-                    <img src="./images/html.svg" alt="">
-                    <img src="./images/css.svg" alt="">
-                    <img src="./images/thymeleaf.svg" alt="">
-                    <img src="./images/js.svg" alt="">
-                    <img src="./images/heroku.svg" alt="">
-                    <img src="./images/postgres.svg" alt="">
+                    <img src="/static/images/spring.svg" th:src="@{/images/spring.svg}" alt="">
+                    <img src="/static/images/hibernate.svg" th:src="@{/images/hibernate.svg}" alt="">
+                    <img src="/static/images/html.svg" th:src="@{/images/html.svg}" alt="">
+                    <img src="/static/images/css.svg" th:src="@{/images/css.svg}" alt="">
+                    <img src="/static/images/thymeleaf.svg" th:src="@{/images/thymeleaf.svg}" alt="">
+                    <img src="/static/images/js.svg" th:src="@{/images/js.svg}" alt="">
+                    <img src="/static/images/heroku.svg" th:src="@{/images/heroku.svg}" alt="">
+                    <img src="/static/images/postgres.svg" th:src="@{/images/postgres.svg}" alt="">
                 </div>
             </div>
         </div>
         <!-- MainBlock2 -->
         <div id="mainBlock2">
             <!-- 베지어 곡선 따라 이동하는 오브젝트들 -->
-            <span style="position: absolute;" id="obj"><img id="imgObj" src="./images/Enemy1_1.png" alt=""></span>
-            <span style="position: absolute;" id="obj2"><img id="imgObj2" src="./images/Enemy2_1.png" alt=""></span>
-            <span style="position: absolute;" id="obj3"><img id="imgObj3" src="./images/Enemy3_1.png" alt=""></span>
-            <span style="position: absolute;" id="obj4"><img id="imgObj4" src="./images/Enemy4_1.png" alt=""></span>
+            <span style="position: absolute;" id="obj"><img id="imgObj" src="../images/Enemy1_1.png"
+                    th:src="@{/images/Enemy1_1.png}" alt=""></span>
+            <span style="position: absolute;" id="obj2"><img id="imgObj2" src="/static/images/Enemy2_1.png"
+                    th:src="@{/images/Enemy2_1.png}" alt=""></span>
+            <span style="position: absolute;" id="obj3"><img id="imgObj3" src="/static/images/Enemy3_1.png"
+                    th:src="@{/images/Enemy3_1.png}" alt=""></span>
+            <span style="position: absolute;" id="obj4"><img id="imgObj4" src="/static/images/Enemy4_1.png"
+                    th:src="@{/images/Enemy4_1.png}" alt=""></span>
             <!-- 조절점들 -->
             <span style="position: absolute;" id="p1"></span>
             <span style="position: absolute;" id="p2"></span>
@@ -91,23 +96,23 @@
                         visit git →</a>
                 </p>
                 <div class="techStack">
-                    <img src="./images/csharp.svg" alt="">
-                    <img src="./images/unity.svg" alt="">
+                    <img src="/static/images/csharp.svg" th:src="@{/images/csharp.svg}" alt="">
+                    <img src="/static/images/unity.svg" th:src="@{/images/unity.svg}" alt="">
                 </div>
             </div>
             <div class="imgBlock">
-                <img src="./images/galaga1.png" alt="">
+                <img src="/static/images/galaga1.png" th:src="@{/images/galaga1.png}" alt="">
             </div>
         </div>
         <!-- MainBlock2 -->
         <div id="mainBlock3">
             <div class="imgBlock">
-                <img src="./images/score board.png" alt="">
-                <img src="./images/jumper.png" alt="">
-                <img src="./images/angryBird.png" alt="">
-                <img src="./images/flappy.png" alt="">
-                <img src="./images/night1.png" alt="">
-                <img src="./images/night2.png" alt="">
+                <img src="/static/images/score board.png" th:src="@{/images/score board.png}" alt="">
+                <img src="/static/images/jumper.png" th:src="@{/images/jumper.png}" alt="">
+                <img src="/static/images/angryBird.png" th:src="@{/images/angryBird.png}" alt="">
+                <img src="/static/images/flappy.png" th:src="@{/images/flappy.png}" alt="">
+                <img src="/static/images/night1.png" th:src="@{/images/night1.png}" alt="">
+                <img src="/static/images/night2.png" th:src="@{/images/night2.png}" alt="">
             </div>
             <div id="mainBlock3Content">
                 <p>
@@ -115,20 +120,21 @@
                     통합할때 중점이 된 부분은 각 개별 게임들이 공통으로 쓰이는 기능들을 추상적으로 구현해 모든 게임에서 쓰이도록 하는 것이었습니다.
                     <br><br>
                     <a href="https://lsh3333.itch.io/manygames" target="_blank">play game →</a><br>
-                    <a href="https://github.com/LSH3333/Unity_ManyGames" target="_blank"><i class="fa-brands fa-github"></i> visit
+                    <a href="https://github.com/LSH3333/Unity_ManyGames" target="_blank"><i
+                            class="fa-brands fa-github"></i> visit
                         git →</a>
                 </p>
                 <div class="techStack">
-                    <img src="./images/csharp.svg" alt="">
-                    <img src="./images/unity.svg" alt="">
+                    <img src="/static/images/csharp.svg" th:src="@{/images/csharp.svg}" alt="">
+                    <img src="/static/images/unity.svg" th:src="@{/images/unity.svg}" alt="">
                 </div>
-            </div>      
+            </div>
         </div>
     </main>
 
 
-       <!-- FOOTER -->
-       <footer>
+    <!-- FOOTER -->
+    <footer>
         <h3>LSH</h3>
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, nesciunt!</p> -->
         <ul>
@@ -138,12 +144,13 @@
             <li>|</li>
             <li><a href="https://tose33.tistory.com/" target="_blank"><i class="fa-solid fa-t"></i></a></li>
             <li>|</li>
-            <li><a href="https://www.acmicpc.net/user/language/chadol51" target="_blank"><i class="fa-solid fa-b"></i> </a></li>
+            <li><a href="https://www.acmicpc.net/user/language/chadol51" target="_blank"><i class="fa-solid fa-b"></i>
+                </a></li>
             <li>|</li>
         </ul>
     </footer>
 
-    <script type="text/javascript" src="bezier.js"></script>
+    <script type="text/javascript" src="/static/js/bezier.js" th:src="@{/js/bezier.js}"></script>
 </body>
 
 </html>

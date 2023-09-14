@@ -138,19 +138,19 @@ function Rotate(obj, imgObj, nextX, nextY) {
 
 
 function StartAnimation() {
-    imgUrls1 = ["./images/Enemy1_1.png", "./images/Enemy1_2.png"]
+    imgUrls1 = ["../images/Enemy1_1.png", "../images/Enemy1_2.png"]
     let idx1 = 0;
     animation(imgObj,idx1,imgUrls1);
 
-    imgUrls2 = ["./images/Enemy2_1.png", "./images/Enemy2_2.png"]
+    imgUrls2 = ["../images/Enemy2_1.png", "../images/Enemy2_2.png"]
     let idx2 = 0;
     animation(imgObj2,idx2,imgUrls2);
 
-    imgUrls3 = ["./images/Enemy3_1.png", "./images/Enemy3_2.png"]
+    imgUrls3 = ["../images/Enemy3_1.png", "../images/Enemy3_2.png"]
     let idx3 = 0;
     animation(imgObj3,idx3,imgUrls3);
 
-    imgUrls4 = ["./images/Enemy4_1.png", "./images/Enemy4_2.png"]
+    imgUrls4 = ["../images/Enemy4_1.png", "../images/Enemy4_2.png"]
     let idx4 = 0;
     animation(imgObj4,idx4,imgUrls4);
 }

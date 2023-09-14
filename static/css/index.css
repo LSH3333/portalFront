@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Poppins', sans-serif; */
+
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* HEADER */
+
 header {
-    min-height: 50vh;
+    min-height: 100vh;
     width: 100%;
     /* linear-gradient: 이미지에 명암을 줌 (default는 to bottom) */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/headerImg.jpeg);
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(headerImg.jpeg); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/interface-3614766_1280.png);
     /* background-color: gray; */
     background-position: center;
     background-size: cover;
@@ -90,13 +93,16 @@ nav {
 }
 
 
+
+
+
 /* MAIN */
 main {
     /* background-color: gray; */
     width: 80%;
     margin: auto;
-    /* text-align: center; */    
-    line-height: 2;
+    /* text-align: center; */
+    padding-top: 100px;
 }
 
 /* mainBlock1 */
@@ -116,21 +122,67 @@ main {
     max-width: 100%;
 }
 
-#mainBlock1Content {
+#mainBlock1 #mainBlock1Content {
     /* background-color: aliceblue; */
 }
 
-#mainBlock1Content #title {
+#mainBlock1 #mainBlock1Content p {
     font-size: 30px;
     margin: 5% 0;
     color: #3db39e;
 }
 
-#mainBlock1Content p {
 
+#readmoreBtn {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#mainBlock1Content a {
-    color: black;
-    text-decoration: underline;
+#readmoreBtn:hover {
+    cursor: pointer;
+    background-color: #3db39e;
+}
+
+#readmoreBtn a {
+    text-decoration: none;
+    color: white;  
+}
+
+
+
+/* mainBlock2 */
+#mainBlock2 {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 6%;
+    margin: 5% 0;
+}
+
+#mainBlock2 .imgBlock {
+    max-width: 40%;
+}
+
+#mainBlock2 .imgBlock img {
+    max-width: 100%;
+}
+
+#mainBlock2 #mainBlock2Content {
+    /* background-color: aliceblue; */
+}
+
+#mainBlock2 #mainBlock2Content p {
+    font-size: 30px;
+    margin: 5% 0;
+    color: #3db39e;
 }
